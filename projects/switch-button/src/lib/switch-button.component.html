@@ -1,0 +1,57 @@
+<button [ngClass]="buttonclasslist">
+    <ng-container *ngIf="labelSlot === 'left'">
+        <ng-container *ngIf="checked">
+            {{ checkedLabel }}
+        </ng-container>
+        <ng-container *ngIf="!checked">
+            {{ uncheckedLabel }}
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="!loading">
+        <ng-container *ngIf="checked">
+            <ng-container *ngIf="!checkedIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                    <path
+                        d="M22.319,4.431,8.5,18.249a1,1,0,0,1-1.417,0L1.739,12.9a1,1,0,0,0-1.417,0h0a1,1,0,0,0,0,1.417l5.346,5.345a3.008,3.008,0,0,0,4.25,0L23.736,5.847a1,1,0,0,0,0-1.416h0A1,1,0,0,0,22.319,4.431Z" />
+                </svg>
+            </ng-container>
+            <ng-container *ngIf="checkedIcon">
+                <i [ngClass]="checkedIcon"></i>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="!checked">
+            <ng-container *ngIf="!uncheckedIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g id="_01_align_center" data-name="01 align center">
+                        <polygon
+                            points="24 1.414 22.586 0 12 10.586 1.414 0 0 1.414 10.586 12 0 22.586 1.414 24 12 13.414 22.586 24 24 22.586 13.414 12 24 1.414" />
+                    </g>
+                </svg>
+            </ng-container>
+            <ng-container *ngIf="uncheckedIcon">
+                <i [ngClass]="uncheckedIcon"></i>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+    <ng-container *ngIf="!loading">
+        <ng-container *ngTemplateOutlet="loading"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="labelSlot === 'right'">
+        <ng-container *ngIf="checked">
+            {{ checkedLabel }}
+        </ng-container>
+        <ng-container *ngIf="!checked">
+            {{ uncheckedLabel }}
+        </ng-container>
+    </ng-container>
+</button>
+<ng-template #loading>
+    <svg id="loading-spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <g fill="none">
+            <path id="track" fill="#C6CCD2"
+                d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M24,44 C35.045695,44 44,35.045695 44,24 C44,12.954305 35.045695,4 24,4 C12.954305,4 4,12.954305 4,24 C4,35.045695 12.954305,44 24,44 Z" />
+            <path id="section" fill="#3F4850"
+                d="M24,0 C37.254834,0 48,10.745166 48,24 L44,24 C44,12.954305 35.045695,4 24,4 L24,0 Z" />
+        </g>
+    </svg>
+</ng-template>

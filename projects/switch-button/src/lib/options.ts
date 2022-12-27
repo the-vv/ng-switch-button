@@ -17,8 +17,8 @@ export enum SwitchButtonSize {
 }
 
 export enum SwitchLabelSlot {
-    /** left slot */
+    /** align text left side of icon */
     left = 'left',
-    /** right slot */
+    /** align text right side of icon */
     right = 'right'
 }
