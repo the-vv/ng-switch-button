@@ -13,7 +13,7 @@ Run `ng build switchButton` to build the project. The build artifacts will be st
 
 ## Publishing
 
-After building your library with `ng build switchButton`, go to the dist folder `cd dist/switch-button` and run `npm publish`.
+After building your library with `ng build switchButton`, go to the dist folder `cd dist/ngx-switch-button` and run `npm publish`.
 
 ## Running unit tests
 

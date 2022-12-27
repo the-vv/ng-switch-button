@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/switch-button",
+  "dest": "../../dist/ngx-switch-button",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

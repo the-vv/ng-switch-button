@@ -1,5 +1,5 @@
 /*
- * Public API Surface of switch-button
+ * Public API Surface of ngx-switch-button
  */
 
 export * from './lib/switch-button.component';

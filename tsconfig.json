@@ -20,7 +20,7 @@
     "module": "ES2022",
     "paths": {
       "switchButton": [
-        "dist/switch-button"
+        "dist/ngx-switch-button"
       ]
     },
     "useDefineForClassFields": false,

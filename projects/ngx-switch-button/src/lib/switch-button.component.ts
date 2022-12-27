@@ -3,7 +3,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { SwitchButtonSize, SwitchButtonType, SwitchLabelSlot } from './options';
 
 @Component({
-  selector: 'ng-switch-button',
+  selector: 'ngx-switch-button',
   templateUrl: './switch-button.component.html',
   styleUrls: ['./switch-button.component.scss'],
   providers: [
@@ -55,7 +55,6 @@ export class SwitchButtonComponent implements OnChanges {
 
   setDisabledState(disabled: boolean) {
     this.disabled = disabled;
-
   }
 
 
