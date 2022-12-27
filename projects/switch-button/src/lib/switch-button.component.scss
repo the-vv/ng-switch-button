@@ -1,0 +1,92 @@
+.sb-small-size-button {
+    font-size: 0.7rem;
+
+    svg {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+}
+
+.sb-medium-size-button {
+    font-size: 0.8rem;
+
+    svg {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}
+
+.sb-large-size-button {
+    font-size: 1rem;
+
+    svg {
+        width: .8rem;
+        height: .8rem;
+    }
+}
+
+.sb-rounded-type-button {
+    border-radius: 0.5rem;
+}
+
+.sb-square-type-button {
+    border-radius: 0.1rem;
+}
+
+.sb-circle-type-button.sb-icon-button {
+    border-radius: 50%;
+}
+
+.sb-circle-type-button:not(.sb-icon-button) {
+    border-radius: 10rem;
+}
+
+.sb-small-size-button {
+    height: 1.5rem;
+
+    &.sb-icon-button {
+        width: 1.5rem;
+    }
+
+    &.sb-label-button {
+        padding: 0.5rem;
+    }
+}
+
+.sb-medium-size-button {
+    height: 1.7rem;
+
+    &.sb-icon-button {
+        width: 1.7rem;
+    }
+
+    &.sb-label-button {
+        padding: 0.7rem;
+    }
+}
+
+.sb-large-size-button {
+    height: 2rem;
+
+    &.sb-icon-button {
+        width: 2rem;
+    }
+
+    &.sb-label-button {
+        padding: .9rem;
+    }
+}
+
+.sb-default-button {
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}

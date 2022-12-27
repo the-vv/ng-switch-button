@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { SwitchButtonComponent } from './switch-button.component';
 
@@ -8,6 +9,7 @@ import { SwitchButtonComponent } from './switch-button.component';
     SwitchButtonComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     SwitchButtonComponent
