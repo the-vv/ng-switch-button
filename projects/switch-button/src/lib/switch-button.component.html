@@ -1,4 +1,6 @@
-<button [ngClass]="buttonclasslist">
+<button [ngClass]="buttonclasslist" (click)="onChanged()" [disabled]="disabled || disabledButton"
+    [style.background]="checked ? checkedBackgroundColor : unCheckedBackgroundColor"
+    [style.color]="checked ? checkedTextColor : unCheckedTextColor">
     <ng-container *ngIf="labelSlot === 'left'">
         <ng-container *ngIf="checked">
             {{ checkedLabel }}
