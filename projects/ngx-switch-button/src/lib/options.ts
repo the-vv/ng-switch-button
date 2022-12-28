@@ -22,3 +22,36 @@ export enum SwitchLabelSlot {
     /** align text right side of icon */
     right = 'right'
 }
+
+export interface MultiStageButtonOptions {
+    /** button size */
+    size?: keyof typeof SwitchButtonSize | SwitchButtonSize;
+    /** button type */
+    type?: keyof typeof SwitchButtonType | SwitchButtonType;
+    /** button label slot */
+    labelSlot?: keyof typeof SwitchLabelSlot | SwitchLabelSlot;
+    /** button class list */
+    classList?: string;
+    /** button disabled */
+    disabled?: boolean;
+    /** button checked */
+    loading?: boolean;
+    /** stages list */
+    stages: MultiStageButtonStage[];
+
+}
+
+export interface MultiStageButtonStage {
+    /** text of the stage */
+    text: string;
+    /** icon of the stage */
+    icon?: string;
+    /** text color of the stage */
+    textColor?: string;
+    /** background color of the stage */
+    backgroundColor?: string;
+    /** value of the stage */
+    value: any;
+    /** class list specifically for this stage */
+    classList?: string;
+}
